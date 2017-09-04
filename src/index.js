@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 
 import App from './components/app';
 
-require('./assets/index.less');
+require('font-awesome-webpack');
+require('./assets/less/index.less');
 
 ReactDOM.render(
     <App />

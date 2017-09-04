@@ -17,7 +17,10 @@ module.exports = {
 			},
 			{
 				test: /\.less$/, loader: 'style-loader!css-loader!less-loader'
-			}
+			},
+			{
+                test: /\.(eot|svg|ttf|woff|woff2|png)\w*/, loader: 'file-loader'
+            }
 		]
 	},
 	resolve: {
@@ -25,6 +28,7 @@ module.exports = {
 	},
 	devServer: {
 		historyApiFallback: true,
-		contentBase: './'
+		contentBase: './',
+		port: 1314
 	}
 };
